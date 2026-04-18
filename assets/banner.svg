@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Sander Mørch-Jensen — Lead Technical Artist at Attensi AS">
+  <defs>
+    <!-- Deep space background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0420"/>
+      <stop offset="45%" stop-color="#1e0b3e"/>
+      <stop offset="100%" stop-color="#031627"/>
+    </linearGradient>
+
+    <!-- Glass panel fill (soft frosted white with subtle depth) -->
+    <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <!-- Animated neon border (purple to cyan) -->
+    <linearGradient id="neonBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.0"/>
+      <stop offset="20%" stop-color="#a855f7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Purple glow orb -->
+    <radialGradient id="purpleOrb">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#a855f7" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyan glow orb -->
+    <radialGradient id="cyanOrb">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Magenta accent orb -->
+    <radialGradient id="magentaOrb">
+      <stop offset="0%" stop-color="#e879f9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grain noise for texture -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.03 0"/>
+    </filter>
+
+    <!-- Soft blur for orbs (glassmorphic depth) -->
+    <filter id="orbBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+
+    <!-- Subtle text glow -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Top highlight line gradient -->
+    <linearGradient id="topHighlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Ambient orbs (behind panel, blurred) -->
+  <circle cx="180" cy="120" r="160" fill="url(#purpleOrb)" filter="url(#orbBlur)"/>
+  <circle cx="1020" cy="180" r="160" fill="url(#cyanOrb)" filter="url(#orbBlur)"/>
+  <circle cx="720" cy="60" r="100" fill="url(#magentaOrb)" filter="url(#orbBlur)"/>
+  <circle cx="420" cy="260" r="90" fill="url(#cyanOrb)" filter="url(#orbBlur)"/>
+
+  <!-- Grain overlay -->
+  <rect width="1200" height="320" filter="url(#grain)"/>
+
+  <!-- Glass panel -->
+  <g>
+    <rect x="72" y="58" width="1056" height="204" rx="24" ry="24" fill="url(#glassFill)"/>
+    <rect x="72" y="58" width="1056" height="204" rx="24" ry="24" fill="none" stroke="url(#neonBorder)" stroke-width="1.5"/>
+    <!-- Top highlight line -->
+    <line x1="96" y1="60" x2="1104" y2="60" stroke="url(#topHighlight)" stroke-width="1"/>
+  </g>
+
+  <!-- Accent marker bar (vertical, purple-cyan) -->
+  <rect x="108" y="110" width="4" height="100" rx="2" fill="url(#neonBorder)"/>
+
+  <!-- Name -->
+  <text x="132" y="172" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#f5f3ff" filter="url(#textGlow)" letter-spacing="-0.5">Sander Mørch-Jensen</text>
+
+  <!-- Role -->
+  <text x="132" y="210" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#a5f3fc" letter-spacing="1.5">LEAD TECHNICAL ARTIST  ·  ATTENSI AS</text>
+
+  <!-- Corner decorations (tech aesthetic) -->
+  <g stroke="#06b6d4" stroke-width="1.5" fill="none" opacity="0.7">
+    <!-- Top-right -->
+    <path d="M 1108 72 L 1108 88 M 1108 72 L 1092 72"/>
+    <!-- Bottom-left -->
+    <path d="M 92 248 L 92 232 M 92 248 L 108 248"/>
+  </g>
+
+  <!-- Small location tag -->
+  <g opacity="0.85">
+    <rect x="900" y="228" width="146" height="22" rx="11" fill="#ffffff" fill-opacity="0.08" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.6"/>
+    <circle cx="916" cy="239" r="3" fill="#06b6d4"/>
+    <text x="926" y="243" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="500" fill="#e9d5ff" letter-spacing="1.2">OSLO  ·  NORWAY</text>
+  </g>
+</svg>
