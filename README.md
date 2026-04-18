@@ -60,19 +60,6 @@ What has changed now is the cost floor. Generative AI has made entire classes of
 
 ---
 
-## GitHub Stats
-
-<p align="center">
-  <a href="https://github.com/smorchj">
-    <img src="https://github-readme-stats.vercel.app/api?username=smorchj&show_icons=true&hide_border=true&bg_color=00000000&title_color=06b6d4&text_color=e9d5ff&icon_color=a855f7&ring_color=a855f7" height="170" alt="GitHub stats" />
-  </a>
-  <a href="https://github.com/smorchj">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=smorchj&layout=compact&hide_border=true&bg_color=00000000&title_color=06b6d4&text_color=e9d5ff&langs_count=8" height="170" alt="Top languages" />
-  </a>
-</p>
-
----
-
 ## How I Work
 
 I am not a formally educated software engineer, I'm a technical artist who learned to code because the problems in front of me needed solving. 9 years of shipping games taught me how to set up pipelines that can deliver effectively and consistently in large scale productions.
