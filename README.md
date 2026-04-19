@@ -40,6 +40,14 @@ A weekend side project. Takes a MetaHuman out of Unreal and lands it in a browse
 
 Runs per-stage on Claude Haiku — each stage boundary keeps context small enough that a weak model can execute. MIT-licensed and **open to contributors**; see the [issue tracker](https://github.com/smorchj/metahuman-to-glb/issues) for what's unfinished.
 
+I also built an animated walkthrough of the context-layer model the pipeline uses: it visualises how Opus authors each stage's contract, how Haiku walks the manifest one stage at a time, and how the five context layers (orientation → routing → stage contract → shared references → per-character state) keep each spawned agent's payload small enough that cheap models finish reliably.
+
+<p align="center">
+  <a href="https://smorchj.github.io/metahuman-to-glb/icm-agent-flow.html">
+    <img src="https://img.shields.io/badge/AGENT%20FLOW%20ANIMATION-watch%20the%20context%20layers%20route-C084FC?style=for-the-badge&labelColor=0a0420" alt="agent flow animation" />
+  </a>
+</p>
+
 ---
 
 ### RealTalk: LLMs in Games for Freeform Dialog
