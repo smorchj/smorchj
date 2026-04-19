@@ -44,6 +44,12 @@ I also built an animated walkthrough of the context-layer model the pipeline use
 
 <p align="center">
   <a href="https://smorchj.github.io/metahuman-to-glb/icm-agent-flow.html">
+    <img src="https://raw.githubusercontent.com/smorchj/metahuman-to-glb/main/assets/icm-agent-flow.gif" alt="ICM agent flow — animated walkthrough of the context layers" width="80%" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://smorchj.github.io/metahuman-to-glb/icm-agent-flow.html">
     <img src="https://img.shields.io/badge/AGENT%20FLOW%20ANIMATION-watch%20the%20context%20layers%20route-C084FC?style=for-the-badge&labelColor=0a0420" alt="agent flow animation" />
   </a>
 </p>
