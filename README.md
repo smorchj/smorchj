@@ -13,14 +13,14 @@
 
 This is my day job. Automating the full path from **Reallusion Character Creator 4** out to game-ready GLBs, plugged directly into the in-house character creator and Unity tooling I designed in the years before generative AI. The combined pipeline is what makes it viable for a small team to deliver customized characters reliably at a large scale to phones, tablets and computers of varying specs, all around the world.
 
-Hoping to eventually open-source the CC4 pipeline — either with Attensi's blessing or as a clean-room re-implementation on my own dime. The [MetaHuman pipeline](#metahuman--glb) below is a taste of the same approach against a different source.
+Hoping to eventually open-source the CC4 pipeline — either with Attensi's blessing or as a clean-room re-implementation on my own dime.
 
 ---
 
 ### MetaHuman → GLB
 > **Unreal Engine 5.6 · Blender 5.0 · Python · three.js · Claude Haiku**
 
-A weekend side project. Takes a MetaHuman out of Unreal and lands it in a browser as a Draco-compressed GLB with a three.js viewer, through a four-stage deterministic pipeline. Same philosophy as the CC4 work, but in the open. Tested running in Safari on iPhone X.
+A weekend side project. Takes a MetaHuman out of Unreal and lands it in a browser as a Draco-compressed GLB with a three.js viewer, through a four-stage deterministic pipeline. Tested running in Safari on iPhone X.
 
 <p align="center">
   <a href="https://smorchj.github.io/metahuman-to-glb/">
