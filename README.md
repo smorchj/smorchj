@@ -13,7 +13,6 @@
 
 This is my day job. Automating the full path from **Reallusion Character Creator 4** out to game-ready GLBs, plugged directly into the in-house character creator and Unity tooling I designed in the years before generative AI. The combined pipeline is what makes it viable for a small team to deliver customized characters reliably at a large scale to phones, tablets and computers of varying specs, all around the world.
 
-Hoping to eventually open-source the CC4 pipeline — either with Attensi's blessing or as a clean-room re-implementation on my own dime.
 
 ---
 
