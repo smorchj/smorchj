@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/smorchj/smorchj/refs/heads/main/assets/banner.svg" alt="Sander Mørch-Jensen — Lead Technical Artist at Attensi AS" width="100%" />
 </p>
 
-> 9 years in the games industry. Currently spearheading the **full automation of 3D art pipelines** at [Attensi](https://attensi.com) — combining Reallusion Character Creator 4 with the in-house character creator I designed, so that one click turns a client brief into a game-ready GLB. On the side I do experiments like the MetaHuman pipeline below.
+> 9 years in the games industry. Currently spearheading the **full automation of 3D art pipelines** at [Attensi](https://attensi.com) Combining Reallusion Character Creator 4 with the in-house character creator I designed, so that one click turns a client brief into a game-ready GLB. On the side I do experiments like the MetaHuman pipeline below.
 
 ---
 
